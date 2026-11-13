@@ -1,0 +1,9 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+.hero-background{
+    background-image: url(imgs/header/imgi_84_mwcbarcelona_fallback_hero_bg.webp);
+}
