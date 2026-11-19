@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MWC Barcelona</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ================= 1. HERO & HEADER (Imagem 1) ================= -->
+    <!-- O FUNDO ENVOLVE TUDO AQUI -->
+    <div class="hero-background">
+        
+        <!-- Barra Topo -->
+        <div class="top-bar">
+            <ul class="top-links">
+                <li><a href="#">🔍</a></li>
+                <li><a href="#">Press Zone</a></li>
+                <li><a href="#">Exhibitor Resources</a></li>
+                <li><a href="#">Get Involved</a></li>
+                <li><a href="#">Log in</a></li>
+            </ul>
+        </div>
+
+        <!-- HEADER NORMAL (Desktop) -->
+        <header class="main-header">
+            <a href="#" class="logo-mwc">
+                <img src="imgs/header/imgi_90_MWCB27_Logo.webp" alt="MWC Barcelona">
+            </a>
+        
+            <nav class="navegacao-principal">
+                <ul class="menu-links">
+                    <li class="dropdown">
+                        <a href="#">2027 LINEUP</a>
+                        <ul class="submenu">
+                            <li><a href="#">Speakers</a></li>
+                            <li><a href="#">Exhibitors</a></li>
+                            <li><a href="#">Themes</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">ATTEND</a>
+                        <ul class="submenu">
+                            <li><a href="#">Why attend?</a></li>
+                            <li><a href="#">Hotels</a></li>
+                            <li><a href="#">Book an external event space</a></li>
+                            <li><a href="#">Explore passes</a></li>
+                            <li><a href="#">Plan your visit</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">GET INVOLVED</a>
+                        <ul class="submenu">
+                            <li><a href="#">Sponsor</a></li>
+                            <li><a href="#">Exhibit</a></li>
+                            <li><a href="#">Speak</a></li>
+                            <li><a href="#">Media Partners</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">ABOUT</a>
+                        <ul class="submenu">
+                            <li><a href="#">About MWC</a></li>
+                            <li><a href="#">About GSMA</a></li>
+                            <li><a href="#">Newsroom</a></li>
+                            <li><a href="#">Sustainability</a></li>
+                        </ul>
+                    </li>
+                </ul>
+        
+                <div class="logos-secundarios">
+                    <img src="imgs/header/imgi_91_logo-4yfn-2024.png" alt="4YFN">
+                    <img src="imgs/header/imgi_92_MWCB27_GLOMO_Logo_Only_White_RGB.png" alt="GLOMO Awards">
+                </div>
+        
+                <a href="#" class="botao-rosa">BUY YOUR PASS</a>
+            </nav>
+        
+            <!-- BOTÃO HAMBÚRGUER (Só aparece no mobile) -->
+            <button class="menu-hamburger" id="abrir-menu" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </header>
+        
+        <!-- SECÇÃO HERO (Texto Principal do Topo) -->
+        <section class="hero-content">
+            <h1>Registration is now open!</h1>
+            <p>MWC27 Barcelona is where the connectivity ecosystem does business. Secure your pass to meet customers, build partnerships and discover the technologies driving industry transformation worldwide.</p>
+            <p>Lock in today's rate on Exhibition and Leaders Conference passes before prices rise.</p>
+
+            <div class="hero-data">
+                <p>1 - 4 March, 2027</p>
+                <p><strong>Fira Gran Via, Barcelona</strong></p>
+            </div>
+
+            <a href="#" class="botao-rosa">BUY YOUR PASS</a>
+        </section>
+
+        <!-- MENU OVERLAY (Ecrã inteiro - Escondido por defeito) -->
+        <div class="menu-overlay" id="menu-overlay">
+            <div class="overlay-header">
+                <a href="#" class="logo-mwc">
+                    <img src="imgs/header/imgi_90_MWCB27_Logo.webp" alt="MWC Barcelona" style="filter: brightness(0) invert(1);">
+                </a>
+                <button class="btn-fechar" id="fechar-menu" aria-label="Fechar menu">
+                    <svg viewBox="0 0 24 24" width="30" height="30" stroke="white" stroke-width="2" fill="none" stroke-linecap="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        
+            <div class="overlay-conteudo">
+                <div class="barra-pesquisa">
+                    <input type="text" placeholder="Search for anything...">
+                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="white" stroke-width="2" fill="none" stroke-linecap="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </div>
+        
+                <ul class="overlay-menu-links">
+                    <li><a href="#">2027 LINEUP <span>&#8250;</span></a></li>
+                    <li><a href="#">ATTEND <span>&#8250;</span></a></li>
+                    <li><a href="#">GET INVOLVED <span>&#8250;</span></a></li>
+                    <li><a href="#">ABOUT <span>&#8250;</span></a></li>
+                </ul>
+        
+                <div class="overlay-logos">
+                    <img src="imgs/header/imgi_91_logo-4yfn-2024.png" alt="4YFN">
+                    <img src="imgs/header/imgi_92_MWCB27_GLOMO_Logo_Only_White_RGB.png" alt="GLOMO Awards">
+                </div>
+        
+                <a href="#" class="botao-rosa btn-overlay">BUY YOUR PASS</a>
+        
+                <ul class="overlay-links-secundarios">
+                    <li><a href="#"><svg viewBox="0 0 24 24" width="14" height="14" stroke="white" stroke-width="2" fill="none" style="margin-right: 8px;"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg> Press Zone</a></li>
+                    <li><a href="#">Exhibitor Resources</a></li>
+                    <li><a href="#">Get Involved</a></li>
+                    <li><a href="#">Log in</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div> <!-- FIM DO HERO-BACKGROUND -->
+
+    <!-- ================= 2. TURN CONVERSATIONS ================= -->
+    <section class="section-turn-conversations">
+        <div class="container">
+            <div class="texto">
+                <h2>Turn conversations into customers at MWC27</h2>
+                <p>Join the companies leading connectivity from the front and connect with senior decision makers actively looking for new technologies, partners and solutions. Secure your place early to maximise visibility and commercial impact.</p>
+                <a href="#" class="botao-azul">BECOME AN EXHIBITOR OR SPONSOR</a>
+            </div>
+            <div class="imagem">
+                <img src="imgs/turn_conversations_into/imgi_94_MWC26-Exhibition-Hall.png" alt="Pessoas na conferência">
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 3. KEYNOTE SPEAKERS ================= -->
+    <section class="section-speakers">
+        <h2>Our first keynote speakers</h2>
+        <div class="carrossel-wrapper">
+            <div class="carrossel-speakers" id="speakers-track">
+                <article class="card-speaker">
+                    <img src="imgs/speakers/imgi_97_AmyWebb_500x500.webp" alt="Amy Webb">
+                    <div class="info-speaker">
+                        <h3>Amy Webb</h3>
+                        <p>CEO, Future Today Strategy Group</p>
+                    </div>
+                </article>
+                <article class="card-speaker">
+                    <img src="imgs/speakers/imgi_98_DrPark_500x500.webp" alt="Dr. Yoon Young Park">
+                    <div class="info-speaker">
+                        <h3>Dr. Yoon Young Park</h3>
+                        <p>Group CEO, KT Corporation</p>
+                    </div>
+                </article>
+                <article class="card-speaker">
+                    <img src="imgs/speakers/imgi_99_AnimaAnandkuma_500x500.webp" alt="Anima Anandkumar">
+                    <div class="info-speaker">
+                        <h3>Anima Anandkumar</h3>
+                        <p>Co-Founder, Accelerated Understanding & Bren Professor</p>
+                    </div>
+                </article>
+                <article class="card-speaker">
+                    <img src="imgs/speakers/imgi_100_Hany-Farid_500x500.webp" alt="Dr Hany Farid">
+                    <div class="info-speaker">
+                        <h3>Dr Hany Farid</h3>
+                        <p>Co-Founder & Chief Science Officer, GetReal Security</p>
+                    </div>
+                </article>
+                <article class="card-speaker">
+                    <img src="imgs/speakers/imgi_101_TarekMansour_500x500.webp" alt="Tarek Mansour">
+                    <div class="info-speaker">
+                        <h3>Tarek Mansour</h3>
+                        <p>Co-founder and CEO, Kalshi</p>
+                    </div>
+                </article>
+                <article class="card-speaker">
+                    <img src="imgs/speakers/imgi_11_Nick-Clegg_500x500.webp" alt="Sir Nick Clegg">
+                    <div class="info-speaker">
+                        <h3>Sir Nick Clegg</h3>
+                        <p>General Partner, Hiro Capital</p>
+                    </div>
+                </article>
+                <article class="card-speaker">
+                    <img src="imgs/speakers/imgi_12_StellaLi_updated.webp" alt="Stella Li">
+                    <div class="info-speaker">
+                        <h3>Stella Li</h3>
+                        <p>CEO, Americas, Europe & MENA, BYD</p>
+                    </div>
+                </article>
+                <article class="card-speaker">
+                    <img src="imgs/speakers/imgi_96_Mati_Staniszewski_500x500.webp" alt="Mati Staniszewski">
+                    <div class="info-speaker">
+                        <h3>Mati Staniszewski</h3>
+                        <p>Co-founder and CEO, ElevenLabs</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <div class="botoes-carrossel">
+            <button type="button" class="btn-seta" id="btn-prev">←</button>
+            <div class="linha-progresso"></div>
+            <button type="button" class="btn-seta" id="btn-next">→</button>
+        </div>
+    </section>
+
+    <!-- ================= 4. CONNECT HEALTH ================= -->
+    <section class="section-connect-health">
+        <div class="container">
+            <div class="imagem">
+                <img src="imgs/health/imgi_13_MWC27_Connected_Health_1.webp" alt="Médicos">
+            </div>
+            <div class="texto">
+                <h2>Connect Health launches at MWC27 and 4YFN</h2>
+                <h3>in partnership with Mobile World Capital</h3>
+                <p>Connect Health is our dedicated programme for healthcare, innovation and technology leaders to meet, collaborate and explore high-performance connectivity and tech solutions revitalising care for people and societies around the world.</p>
+                <a href="#" class="botao-azul">LEARN MORE ABOUT CONNECT HEALTH</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 5. ECOSYSTEM ================= -->
+    <section class="section-ecosystem">
+        <div class="container-ecosystem">
+            <h2>Access the global connectivity ecosystem</h2>
+            <p class="subtitulo">From AI and cloud to telecoms, devices and enterprise technology, companies determining the future direction of global connectivity use MWC Barcelona to strengthen relationships, generate demand and grow their business.</p>
+            <div class="imagem-ecossistema">
+                <img src="imgs/the_global_connectitivity_eco/imgi_14_Updated_Universe.webp" alt="Ecossistema global de empresas de conectividade da MWC">
+            </div>
+            <div class="wrapper-botao">
+                <a href="#" class="botao-azul">VIEW THE 2027 EXHIBITOR LIST</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 6. NÚMEROS ================= -->
+    <section class="section-numeros">
+        <h2>Make the numbers work for your business</h2>
+        <div class="grid-numeros">
+            <div class="card-numero"><h3>+105K</h3><p>ATTENDEES</p></div>
+            <div class="card-numero"><h3>+2,900</h3><p>EXHIBITORS, SPONSORS AND PARTNERS</p></div>
+            <div class="card-numero"><h3>207</h3><p>COUNTRIES AND TERRITORIES</p></div>
+            <div class="card-numero"><h3>60%</h3><p>ADJACENT INDUSTRIES IN ATTENDANCE</p></div>
+            <div class="card-numero"><h3>2,600+</h3><p>JOURNALISTS AND ANALYSTS</p></div>
+        </div>
+        <div class="grid-numeros-baixo">
+            <div class="card-numero"><h3>86%</h3><p>GAINED VALUABLE BUSINESS CONTACTS</p></div>
+            <div class="card-numero"><h3>45%</h3><p>DIRECTOR LEVEL AND ABOVE</p></div>
+        </div>
+        <div class="wrapper-botao">
+            <a href="#" class="botao-azul">SPONSOR OR EXHIBIT</a>
+        </div>
+    </section>
+
+    <!-- ================= 7. THEMES ================= -->
+    <section class="section-temas">
+        <h2>Our themes: your agenda</h2>
+        <p>This year MWC27 is defined by six thought leadership themes...</p>
+        <div class="grid-temas">
+            <article class="card-tema">
+                <img src="imgs/our_themes/imgi_15_MWC27_NetworkReinvented_icon.png" alt="Networks">
+                <p>Networks Reinvented</p>
+                <span>THEME SPONSOR:</span>
+                <img src="imgs/our_themes/imgi_16_kddi.png" alt="KDDI">
+            </article>
+            <article class="card-tema">
+                <img src="imgs/our_themes/imgi_17_MWC27_AIinaction_icon.png" alt="AI in Action">
+                <p>AI in Action</p>
+                <span>THEME SPONSOR:</span>
+                <img src="imgs/our_themes/imgi_18_HonorNewWhite_Logo_300x150.png" alt="Honor">
+            </article>
+            <article class="card-tema">
+                <img src="imgs/our_themes/imgi_19_MWC27_AutonomousEnterprise_icon.png" alt="Autonomous Enterprise">
+                <p>Autonomous Enterprise</p>
+                <span>THEME SPONSOR:</span>
+                <img src="imgs/our_themes/imgi_20_tech_mahindra_white_2x1.png" alt="Tech Mahindra">
+            </article>
+            <article class="card-tema">
+                <img src="imgs/our_themes/imgi_21_MWC27_AIoftomorrow_icon.png" alt="AI Tomorrow">
+                <p>AI of Tomorrow</p>
+                <span>THEME SPONSOR:</span>
+                <img src="imgs/our_themes/imgi_22_Infosys_logo_white_300x150.png" alt="Infosys">
+            </article>
+            <article class="card-tema">
+                <img src="imgs/our_themes/imgi_23_MWC27_Trustatscale_icon.png" alt="Trust at Scale">
+                <p>Trust at Scale</p>
+                <span>THEME SPONSOR:</span>
+                <img src="imgs/our_themes/imgi_24_kpmg-logo-white-400x200.png" alt="KPMG">
+            </article>
+            <article class="card-tema">
+                <img src="imgs/our_themes/imgi_27_MWC27_TheNextEra_icon.png" alt="The Next Era">
+                <p>The Next Era</p>
+                <span>THEME SPONSOR:</span>
+                <img src="imgs/our_themes/imgi_28_softbank_logo_white_300x150.png" alt="SoftBank">
+            </article>
+        </div>
+        <a href="#" class="botao-azul">EXPLORE THE THEMES</a>
+    </section>
+
+    <!-- ================= 8. MWC EXPERIENCE ================= -->
+    <section class="section-experience">
+        <div class="container-experience">
+            <h2>The MWC experience</h2>
+            <p class="subtitulo">Powerful industry voices, groundbreaking innovation, global transformation - our MWC26 conference stages and showfloor had it all.</p>
+            <div class="grid-experience">
+                <article class="card-experience">
+                    <img src="imgs/the_mwc_experience/imgi_27_mwc26_aaron_paul_keynote_3x2.jpg" alt="Debate">
+                    <div class="conteudo-card">
+                        <h3>Inspiration in abundance</h3>
+                        <p>From Elon Musk to Tim Berners-Lee, our conference legacy of outstanding tech pioneers, connectivity leaders and industry influencers drives boardroom debates, year after year.</p>
+                        <a href="#">EXPLORE THOUGHT LEADERSHIP <span>→</span></a>
+                    </div>
+                </article>
+                <article class="card-experience">
+                    <img src="imgs/the_mwc_experience/imgi_28_mwc26_robot_exhibition_3x2.jpg" alt="Tech">
+                    <div class="conteudo-card">
+                        <h3>Technology everyone talks about</h3>
+                        <p>Get hands-on with transformative tech and meet the global innovators who turn our showfloor into a digital tomorrow-land - from enterprises to entrepreneurs.</p>
+                        <a href="#">EXPLORE THE LATEST TECH <span>→</span></a>
+                    </div>
+                </article>
+                <article class="card-experience">
+                    <img src="imgs/the_mwc_experience/imgi_29_MWCB27_Attend_800x533.webp" alt="Networking">
+                    <div class="conteudo-card">
+                        <h3>Next-level networking</h3>
+                        <p>Whatever your industry, whether you're buying or selling, MWC is the place that brings the decision makers together - with smart tools and curated spaces to catalyse powerful connections.</p>
+                        <a href="#">EXPLORE NETWORKING <span>→</span></a>
+                    </div>
+                </article>
+                <article class="card-experience">
+                    <img src="imgs/the_mwc_experience/imgi_30_mwc26_speaker_2_3x2.jpg" alt="Change">
+                    <div class="conteudo-card">
+                        <h3>Shaping global transformation</h3>
+                        <p>Connecting more of the planet to health and finance, accelerating telco-grade AI, fighting the global scam epidemic - the most impactful and far-reaching projects become reality at MWC Barcelona.</p>
+                        <a href="#">EXPLORE GLOBAL CHANGE <span>→</span></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 9. EVENT HIGHLIGHTS ================= -->
+    <section class="section-highlights">
+        <h2>Event highlights</h2>
+        <div class="video-container">
+            <img src="imgs/event_highlights/imgi_87_2129990417-04db91245f2b19eeec2637bc52feeb15ae769de401053542073d69a0201a1296-d_1920x1080.jpg" alt="Video Preview">
+            <div class="video-overlay">
+                <button class="btn-play">PLAY ▶</button>
+                <p>Video preview - enable cookies to play full video.</p>
+                <p class="texto-fundo">This content is hosted by a third party. By showing the external content you accept the <strong>terms and conditions</strong> of www.vimeo.com</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 10. HEADLINES ================= -->
+    <section class="section-headlines">
+        <div class="container-headlines">
+            <h2>Key headlines from MWC</h2>
+            <div class="layout-headlines">
+                <article class="noticia-destaque">
+                    <img src="imgs/key_headlines/imgi_120_SoftbankPR_800x533.webp" alt="SoftBank">
+                    <h3>SoftBank Corp. to Make Exhibitor Debut at MWC Barcelona with Largest Booth Among Telecommunications Carriers</h3>
+                    <div class="info-meta">
+                        <span class="data"><span class="icone">📅</span> November 4, 2026</span>
+                        <span class="tag-rosa">Press Release</span>
+                    </div>
+                </article>
+                <div class="noticias-secundarias">
+                    <article class="noticia-pequena">
+                        <img src="imgs/key_headlines/imgi_121_MWC26_Day4_800x533.webp" alt="GSMA">
+                        <div class="conteudo-pequeno">
+                            <h3>GSMA MWC26 Barcelona closes 20th anniversary edition</h3>
+                            <div class="info-meta">
+                                <span class="data"><span class="icone">📅</span> March 5, 2026</span>
+                                <span class="tag-rosa">Press Release</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="noticia-pequena">
+                        <img src="imgs/key_headlines/imgi_122_MWC26_Telco_800x533.webp" alt="AI">
+                        <div class="conteudo-pequeno">
+                            <h3>GSMA launches Open Telco AI to accelerate development of telco-grade AI</h3>
+                            <div class="info-meta">
+                                <span class="data"><span class="icone">📅</span> March 2, 2026</span>
+                                <span class="tag-rosa">Press Release</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="noticia-pequena">
+                        <img src="imgs/key_headlines/imgi_123_GSMA_Foundry_ESA_800x533.webp" alt="Funding">
+                        <div class="conteudo-pequeno">
+                            <h3>GSMA Foundry and ESA Announce Access to New Funding worth up to €100M for AI, NTN, D2D and 6G at MWC26 Barcelona</h3>
+                            <div class="info-meta">
+                                <span class="data"><span class="icone">📅</span> March 2, 2026</span>
+                                <span class="tag-rosa">Press Release</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 11. NEWSLETTER & EXHIBITORS ================= -->
+    <section class="section-newsletter">
+        <div class="container">
+            <div class="promoted-exhibitors">
+                <h2>Promoted Exhibitors</h2>
+                <div class="grid-exhibitors">
+                    <div class="exhibitor-box"><img src="imgs/newsletter/mediatek.png" alt="MediaTek"></div>
+                    <div class="exhibitor-box"><img src="imgs/newsletter/enigm.png" alt="Enigm"></div>
+                    <div class="exhibitor-box"><img src="imgs/newsletter/ericsson.jpg" alt="Ericsson"></div>
+                    <div class="exhibitor-box"><img src="imgs/newsletter/orange.jpg" alt="Orange"></div>
+                </div>
+            </div>
+            <div class="newsletter-bar">
+                <p>Stay up to date on the latest #MWC27 news</p>
+                <form class="form-newsletter">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit">SUBSCRIBE</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 12. PARTNERS ================= -->
+    <section class="section-partners">
+        <h2>Partners & Sponsors</h2>
+        <p class="subtitulo">Thank you to all our valued partners and sponsors</p>
+        <div class="grid-partners">
+            <div class="partner-card">
+                <div class="logo-box"><img src="imgs/partners_sponsores/imgi_124_mobile-world-capital-logo-new-400x200.png" alt="Mobile World Capital Barcelona"></div>
+                <p>An Event Of Mobile World Capital Barcelona</p>
+            </div>
+            <div class="partner-card">
+                <div class="logo-box"><img src="imgs/partners_sponsores/imgi_125_KDDI_Stacked_Logo_300x150.png" alt="KDDI"></div>
+                <p>Networks Reinvented Theme Sponsor</p>
+            </div>
+            <div class="partner-card">
+                <div class="logo-box"><img src="imgs/partners_sponsores/imgi_126_Honor_new_Logo_300x150.png" alt="HONOR"></div>
+                <p>AI in Action Theme Sponsor</p>
+            </div>
+            <div class="partner-card">
+                <div class="logo-box"><img src="imgs/partners_sponsores/imgi_127_tech_mahindra_color_2x1.png" alt="Tech Mahindra"></div>
+                <p>Autonomous Enterprise Theme Sponsor</p>
+            </div>
+            <div class="partner-card">
+                <div class="logo-box"><img src="imgs/partners_sponsores/imgi_128_Infosys_new_logo_300x150.png" alt="Infosys"></div>
+                <p>AI of Tomorrow Theme Sponsor</p>
+            </div>
+            <div class="partner-card">
+                <div class="logo-box"><img src="imgs/partners_sponsores/imgi_129_KPMG_logo_300x150.jpg" alt="KPMG"></div>
+                <p>Trust at Scale Theme Sponsor</p>
+            </div>
+            <div class="partner-card">
+                <div class="logo-box"><img src="imgs/partners_sponsores/imgi_130_softbank_new_logo_300x150.png" alt="SoftBank"></div>
+                <p>The Next Era Theme Sponsor</p>
+            </div>
+            <div class="partner-card">
+                <div class="logo-box"><img src="imgs/partners_sponsores/imgi_131_Accenture_logo_300x150.png" alt="Accenture"></div>
+                <p>Connected Industries Knowledge Partner</p>
+            </div>
+            <div class="partner-card">
+                <div class="logo-box"><img src="imgs/partners_sponsores/imgi_132_paloalto_networks_logo_400x200.png" alt="Palo Alto Networks"></div>
+                <p>Security Headline Sponsor</p>
+            </div>
+            <div class="partner-card">
+                <div class="logo-box"><img src="imgs/partners_sponsores/imgi_133_Government-of-Catalonia_logo_300x150.png" alt="Generalitat de Catalunya"></div>
+                <p>Digital Planet Official Partner</p>
+            </div>
+            <div class="partner-card">
+                <div class="logo-box"><img src="imgs/partners_sponsores/imgi_134_GSMAintelligence_logo_2024-10-22-090937_zzjs.png" alt="GSMA Intelligence"></div>
+                <p>Intelligence Partner</p>
+            </div>
+            <div class="partner-card">
+                <div class="logo-box"><img src="imgs/partners_sponsores/imgi_135_mobile-world-live-mwl-logo-new-400x200.png" alt="Mobile World Live"></div>
+                <p>Official Broadcast Partner</p>
+            </div>
+            <div class="partner-card">
+                <div class="logo-box"><img src="imgs/partners_sponsores/imgi_136_WSJ_Logo_300x150.png" alt="The Wall Street Journal Barron's Group"></div>
+                <p>Official Media Partner</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 13. FOOTER ================= -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-col logo-col">
+                <img src="imgs/footer/imgi_138_logo-mwc-gsma-300x124-optimised.png" alt="MWC GSMA" class="logo-footer">
+                <p>Our flagship mobile industry and technology event, returns to Barcelona for 2027.</p>
+                <div class="redes-sociais">
+                    <a href="#" aria-label="X">X</a>
+                    <a href="#" aria-label="Instagram">IG</a>
+                    <a href="#" aria-label="YouTube">YT</a>
+                    <a href="#" aria-label="LinkedIn">IN</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>MWC BARCELONA</h4>
+                <ul>
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="#">App</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Get in Touch</a></li>
+                    <li><a href="#">Security</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>SPONSORS & PARTNERS</h4>
+                <ul>
+                    <li><a href="#">Sponsors & Partners</a></li>
+                    <li><a href="#">Media & Association Partners</a></li>
+                    <li><a href="#">Technology Partners</a></li>
+                </ul>
+                <h4 class="margem-topo">LEGAL</h4>
+                <ul>
+                    <li><a href="#">Legal</a></li>
+                    <li><a href="#">Cookie Preferences</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>GSMA</h4>
+                <ul>
+                    <li><a href="#">About the GSMA</a></li>
+                    <li><a href="#">GSMA Intelligence</a></li>
+                    <li><a href="#">GSMA Membership</a></li>
+                    <li><a href="#">GSMA Mobile for Development</a></li>
+                    <li><a href="#">GSMA Services</a></li>
+                    <li><a href="#">Mobile World Capital Barcelona</a></li>
+                    <li><a href="#">GSMA Foundry</a></li>
+                    <li><a href="#">GSMA Advance</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>GSMA EVENTS</h4>
+                <ul>
+                    <li><a href="#">4YFN</a></li>
+                    <li><a href="#">MWC Doha</a></li>
+                    <li><a href="#">MWC Kigali</a></li>
+                    <li><a href="#">MWC Shanghai</a></li>
+                    <li><a href="#">M360 Series</a></li>
+                    <li><a href="#">Nova Future Summit</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="app-download">
+                <p>Download the MWC App</p>
+                <div class="botoes-app">
+                    <img src="imgs/footer/imgi_139_apple_app_store_icon.png" alt="App Store">
+                    <img src="imgs/footer/imgi_140_google_play_store_app_icon.png" alt="Google Play">
+                    <img src="imgs/footer/imgi_141_huawei_app_gallery_icon.png" alt="AppGallery">
+                </div>
+            </div>
+            <div class="copyright">
+                <p>#MWC27 Copyright 2027 GSM Association.<br>
+                    The GSMA logo is registered and owned by the GSMA Association. All other<br>
+                    trademarks are the property of their respective owners.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
